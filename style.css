@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a:link{
+    text-decoration: none;
+  }
+#navbar{
+    display: flex;
+    background-color:rgb(120, 120, 245);
+    height: 50px;
+}
+.element{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin: -2px 3px;
+    color: black;
+}
+#logo{
+    height: 45px;
+    width: 45px;
+    margin: 0px 20px;
+    padding: 3px 2px;
+}
+.elements{
+    margin: 17px 18px;
+    padding: 1px 10px;
+    text-decoration: none;
+    list-style: none;
+    background-color: white;
+    border-radius: 10px;
+}
+.elements:hover{
+    background-color: cyan;
+    cursor: pointer;
+}
+.elements a:hover{
+
+    font-size: large;
+}
+#sect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 125px;
+    padding: 14px 7px;
+    background-color: rgb(224, 215, 215);
+    border-radius: 20px;
+}
+#profile{
+    height: 110px;
+    width: 110px;
+    margin: 2px 3px;
+    padding: 2px 3px;
+    
+}
+#top{
+    text-align: center;
+}
+.line{
+    background-color: black;
+    width: 31px;
+    height: 4px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 3%;
+    top: 3%;
+}
+@media screen and (max-width:770px){
+    #sect{
+        flex-direction: column;
+        text-align: center;
+    }
+    .burger{
+        display: block;
+        top: 2%;
+    }
+    .element{
+        display: none;
+    }
+}
+.after{
+    flex-direction: column;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 30%;
+    display: block;
+    background-color: rgb(120, 120, 245);
+    top: 40px;
+}
